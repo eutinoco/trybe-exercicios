@@ -17,48 +17,56 @@
     </header>
     <main class="main">
         <form action="" method="get">
-            <label for="Nome">
-                Nome:
-                <input type="text" name="Nome" id="Nome">
-            </label>
-            <label for="inputEmail">
-                E-mail:
-                <input type="email" name="Email" id="inputEmail">
-            </label>
-            <label for="op1">
-                <input type="radio" name="opcao" id="op1" value="op1">
-                Opção 1
-            </label>
-            <label for="op2">
-                <input type="radio" name="opcao" id="op2" value="op2">
-                Opção 2
-            </label>
-            <label for="op3">
-                <input type="radio" name="opcao" id="op3" value="op3">
-                Opção 3
-            </label>
-            <label for="op4">
-                <input type="radio" name="opcao" id="op4" value="op4">
-                Opção 4
-            </label>
+            <div class="nameEmail">
+                <label for="Nome">
+                    Nome:
+                    <input type="text" name="Nome" id="Nome">
+                </label>
+                <label for="inputEmail">
+                    E-mail:
+                    <input type="email" name="Email" id="inputEmail">
+                </label>
+            </div>
+            <div class="option">
+                <label for="op1">
+                    <input type="radio" name="opcao" id="op1" value="op1">
+                    Opção 1
+                </label>
+                <label for="op2">
+                    <input type="radio" name="opcao" id="op2" value="op2">
+                    Opção 2
+                </label>
+                <label for="op3">
+                    <input type="radio" name="opcao" id="op3" value="op3">
+                    Opção 3
+                </label>
+                <label for="op4">
+                    <input type="radio" name="opcao" id="op4" value="op4">
+                    Opção 4
+                </label>
+            </div>
             <label for="textArea">
-                Espaço para digitar a resposta: 
+                Espaço para digitar a resposta: <br>
                 <textarea name="Texto" id="textArea" cols="30" rows="10" placeholder="Escreva seu texto aqui."></textarea>
             </label>
             <label for="date">
                 Data: 
                 <input type="date" name="date" id="date">
             </label>
-            <label for="conc1">
-                concordo 1: 
-                <input type="checkbox" name="conc1" id="conc1">
-            </label>
-            <label for="conc2">
-                concordo 2: 
-                <input type="checkbox" name="" id="">
-            </label>
-            <input type="submit" value="Enviar">
-            <input type="submit" value="Apagar">
+            <div class="concordo">
+                <label for="conc1">
+                    concordo 1:
+                    <input type="checkbox" name="conc1" id="conc1">
+                </label>
+                <label for="conc2">
+                    concordo 2:
+                    <input type="checkbox" name="" id="">
+                </label>
+            </div>
+            <div class="button">
+                <input type="submit" value="Enviar">
+                <input type="submit" value="Apagar">
+            </div>
         </form>
     </main>
 
