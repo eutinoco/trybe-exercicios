@@ -20,3 +20,16 @@ const ordemCrescente = (arr) => {
     })} se encontram ordenados de forma crescente!`)
 }
 ordemCrescente(oddsAndEvens)
+
+const customer = {
+  firstName: 'Marllon',
+  age: 22,
+  job: 'Teacher',
+};
+
+const objeto = (object, keyName, value) => {
+  object[keyName] = value
+  return customer
+};
+
+objeto(customer, 'sobreNome', 'Tinoco')
