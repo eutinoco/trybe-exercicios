@@ -9,4 +9,14 @@ const testingScope = (escopo) => {
     }
 }
 
-  testingScope(true);
+testingScope(true);
+
+// Bonus
+
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+const ordemCrescente = (arr) => {
+    console.log(`Os números ${arr.sort((a, b)=> {
+        return a-b
+    })} se encontram ordenados de forma crescente!`)
+}
+ordemCrescente(oddsAndEvens)
