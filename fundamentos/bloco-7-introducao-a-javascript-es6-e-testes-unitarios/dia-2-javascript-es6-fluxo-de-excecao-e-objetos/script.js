@@ -1,6 +1,8 @@
 const verificaCampo = (campo1, campo2) => {
     if (campo1 === "" || campo2 === "") {
-        throw new Error('Por favor, digite números válidos!')
+        throw new Error('Por favor, preencha os dois campos!')
+    } else if (isNaN(campo1) || isNaN(campo2)) {
+        throw new Error('Por favor, digite apenas números!')
     }
 }
 
