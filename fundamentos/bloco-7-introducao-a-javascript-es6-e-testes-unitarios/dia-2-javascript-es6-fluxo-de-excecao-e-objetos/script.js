@@ -1,10 +1,23 @@
+const verificaCampo = (campo1, campo2) => {
+    if (campo1 === "" || campo2 === "") {
+        throw new Error('Por favor, digite números válidos!')
+    }
+}
+
 const sum = () => {
-    const valor1 = parseInt(document.querySelector('#value1').value)
-    const valor2 = parseInt(document.querySelector('#value2').value)
-    const result = valor1 + valor2
-    document.querySelector('#result').innerText = `Resultado: ${result}`
-    document.getElementById('value1').value = '';
-    document.getElementById('value2').value = '';
+    try {
+        const valor1 = document.querySelector('#value1').value
+        const valor2 = document.querySelector('#value2').value
+        const result = parseInt(valor1) + parseInt(valor2)
+        verificaCampo(valor1, valor2)
+        document.querySelector('#result').innerText = `Resultado: ${result}`
+    } catch (error) {
+        document.querySelector('#result').innerText = error.message;
+    } finally {
+        document.getElementById('value1').value = '';
+        document.getElementById('value2').value = '';
+    }
+
 }
 
 window.onload = () => {
